@@ -1,0 +1,82 @@
+2024/10/10 13:28:16 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\backend\debug.db
+2024/10/10 13:28:16 succesfully created local database
+2024/10/10 13:28:16 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810
+2024/10/10 13:28:16 query error
+2024/10/10 13:28:16 unable to open database file: out of memory (14)
+2024/10/10 13:30:14 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\backend\debug.db
+2024/10/10 13:30:14 succesfully created local database
+2024/10/10 13:30:14 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810
+2024/10/10 13:30:14 query error
+2024/10/10 13:30:14 unable to open database file: out of memory (14)
+2024/10/10 13:31:51 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\backend\debug.db
+2024/10/10 13:31:51 succesfully created local database
+2024/10/10 13:31:51 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810
+2024/10/10 13:31:51 query error
+2024/10/10 13:31:51 unable to open database file: out of memory (14)
+2024/10/10 13:32:07 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\backend\debug.db
+2024/10/10 13:32:07 succesfully created local database
+2024/10/10 13:32:07 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810
+2024/10/10 13:32:07 query error
+2024/10/10 13:32:07 unable to open database file: out of memory (14)
+2024/10/10 13:32:32 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\backend\debug.db
+2024/10/10 13:32:32 succesfully created local database
+2024/10/10 13:32:32 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810
+2024/10/10 13:32:32 query error
+2024/10/10 13:32:32 unable to open database file: out of memory (14)
+2024/10/10 13:34:10 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\backend\debug.db
+2024/10/10 13:34:10 succesfully created local database
+2024/10/10 13:34:10 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810
+2024/10/10 13:34:10 query error
+2024/10/10 13:34:10 unable to open database file: out of memory (14)
+2024/10/10 13:34:25 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\backend\debug.db
+2024/10/10 13:34:25 succesfully created local database
+2024/10/10 13:34:25 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810
+2024/10/10 13:34:25 query error
+2024/10/10 13:34:25 unable to open database file: out of memory (14)
+2024/10/10 13:36:49 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:36:49 succesfully created local database
+2024/10/10 13:36:49 scanned row NOM
+2024/10/10 13:41:43 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:41:43 succesfully created local database
+2024/10/10 13:41:43 scanned row NOM
+2024/10/10 13:42:29 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:42:29 succesfully created local database
+2024/10/10 13:42:29 scanned row NOM
+2024/10/10 13:42:57 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:42:57 succesfully created local database
+2024/10/10 13:42:57 scanned row NOM
+2024/10/10 13:43:15 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:43:15 succesfully created local database
+2024/10/10 13:46:59 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:46:59 succesfully created local database
+2024/10/10 13:47:27 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:47:27 succesfully created local database
+2024/10/10 13:47:27 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810 AND CODNCM = 1
+2024/10/10 13:48:29 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:48:29 succesfully created local database
+2024/10/10 13:48:29 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810 AND CODNCM = 1
+2024/10/10 13:49:23 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:49:23 succesfully created local database
+2024/10/10 13:49:23 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810 AND CODNCM = 1
+2024/10/10 13:52:00 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:52:00 succesfully created local database
+2024/10/10 13:52:00 SELECT CODSEN FROM NCMTAB WHERE CODNCM = 6810 AND CODNCM = 1
+2024/10/10 13:55:00 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:55:00 succesfully created local database
+2024/10/10 13:55:53 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:55:53 succesfully created local database
+2024/10/10 13:56:59 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:56:59 succesfully created local database
+2024/10/10 13:57:49 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:57:49 succesfully created local database
+2024/10/10 13:57:49 
+2024/10/10 13:57:49 sql: expected 1 destination arguments in Scan, not 2
+2024/10/10 13:58:23 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 13:58:23 succesfully created local database
+2024/10/10 13:58:23 v is equal to: NOM b is equal to: 
+2024/10/10 14:25:00 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 14:25:00 succesfully created local database
+2024/10/10 14:25:00 
+2024/10/10 14:25:00 sql: expected 1 destination arguments in Scan, not 2
+2024/10/10 14:25:22 trying to connect to database: c:\Users\suporte\Dev\sqlview1\backend\tests\debug.db
+2024/10/10 14:25:22 succesfully created local database

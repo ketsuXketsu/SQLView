@@ -1,0 +1,94 @@
+
+:root {
+    --bg-main: #262626;
+    --bg-main-container: #383838;
+    --border: #5e5e5e;
+    --button: #272727;
+    --object: #313035;
+}
+
+html {
+    background-color: var(--bg-main);
+    color: white;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300; 
+    overflow: hidden;
+}
+
+body * {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    border-bottom: 1px solid var(--border);
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    background-color: var(--bg-main-container);
+    box-shadow: 0px 5px 20px black;
+}
+
+.sidebarL {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border);
+    width: 20%;
+    gap: 2px;
+}
+
+.sidebarL button {
+    border-bottom: 2px solid var(--border);
+    color: inherit;
+    border: none;
+    background-color: var(--button);
+    padding: 10px;
+}
+.sidebarL button:hover {
+    background-color: rgb(30, 28, 55);
+    scale: 105%;
+}
+
+.queryPanel {
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid var(--border);
+}
+
+.queryArea {
+    height: 99.5%;
+    width: 99%;
+    background-color: #262626;
+    border: none;
+    color: rgb(81, 131, 89);
+    resize: none;
+    font-family: monospace;
+}
+
+.infoViewPanel {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.sqlObject {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--object);
+    border-left: 4px solid white;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+#app {
+    height: 100vh;
+    text-align: center;
+}

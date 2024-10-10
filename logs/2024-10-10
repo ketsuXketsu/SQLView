@@ -1,0 +1,187 @@
+2024/10/10 09:18:26 workDir does not match the shell pattern
+2024/10/10 09:18:26 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:06:30 workDir does not match the shell pattern
+2024/10/10 10:06:30 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:08:17 workDir does not match the shell pattern
+2024/10/10 10:08:17 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:08:26 workDir does not match the shell pattern
+2024/10/10 10:08:26 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:28:35 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 10:28:35 succesfully created local database
+2024/10/10 10:29:09 trying to connect to database: 
+2024/10/10 10:29:09 succesfully created local database
+2024/10/10 10:29:11 
+2024/10/10 10:29:11 SQL logic error: no such table: ncmtab (1)
+2024/10/10 10:29:54 workDir does not match the shell pattern
+2024/10/10 10:29:54 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:30:05 workDir does not match the shell pattern
+2024/10/10 10:30:05 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:30:29 workDir does not match the shell pattern
+2024/10/10 10:30:29 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:30:43 workDir does not match the shell pattern
+2024/10/10 10:30:43 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:32:09 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 10:32:09 succesfully created local database
+2024/10/10 10:32:27 workDir does not match the shell pattern
+2024/10/10 10:32:27 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:33:19 workDir does not match the shell pattern
+2024/10/10 10:33:19 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:33:29 workDir does not match the shell pattern
+2024/10/10 10:33:29 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:33:51 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 10:33:51 succesfully created local database
+2024/10/10 10:37:34 workDir does not match the shell pattern
+2024/10/10 10:37:34 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:37:46 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 10:37:46 succesfully created local database
+2024/10/10 10:38:53 workDir does not match the shell pattern
+2024/10/10 10:38:53 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:39:30 workDir does not match the shell pattern
+2024/10/10 10:39:30 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:39:39 workDir does not match the shell pattern
+2024/10/10 10:39:39 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:39:53 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 10:39:53 succesfully created local database
+2024/10/10 10:40:12 
+2024/10/10 10:40:12 SQL logic error: near "WHERE": syntax error (1)
+2024/10/10 10:41:05 workDir does not match the shell pattern
+2024/10/10 10:41:05 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:41:15 workDir does not match the shell pattern
+2024/10/10 10:41:15 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:41:28 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 10:41:28 succesfully created local database
+2024/10/10 10:41:30 
+2024/10/10 10:41:30 SQL logic error: incomplete input (1)
+2024/10/10 10:43:02 workDir does not match the shell pattern
+2024/10/10 10:43:02 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:43:14 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 10:43:14 succesfully created local database
+2024/10/10 10:43:17 query error
+2024/10/10 10:43:17 SQL logic error: near "a": syntax error (1)
+2024/10/10 10:43:19 query error
+2024/10/10 10:43:19 SQL logic error: incomplete input (1)
+2024/10/10 10:43:20 query error
+2024/10/10 10:43:20 SQL logic error: incomplete input (1)
+2024/10/10 10:43:20 query error
+2024/10/10 10:43:20 SQL logic error: incomplete input (1)
+2024/10/10 10:43:20 query error
+2024/10/10 10:43:20 SQL logic error: incomplete input (1)
+2024/10/10 10:43:47 workDir does not match the shell pattern
+2024/10/10 10:43:47 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:44:10 workDir does not match the shell pattern
+2024/10/10 10:44:10 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:44:22 workDir does not match the shell pattern
+2024/10/10 10:44:22 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:44:38 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 10:44:38 succesfully created local database
+2024/10/10 10:46:11 query error
+2024/10/10 10:46:11 SQL logic error: near "WHERE": syntax error (1)
+2024/10/10 10:47:16 workDir does not match the shell pattern
+2024/10/10 10:47:16 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:47:41 workDir does not match the shell pattern
+2024/10/10 10:47:41 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:47:51 workDir does not match the shell pattern
+2024/10/10 10:47:51 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:48:01 workDir does not match the shell pattern
+2024/10/10 10:48:01 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:56:52 workDir does not match the shell pattern
+2024/10/10 10:56:52 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:56:58 workDir does not match the shell pattern
+2024/10/10 10:56:58 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:57:16 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 10:57:16 succesfully created local database
+2024/10/10 10:57:21 query error
+2024/10/10 10:57:21 SQL logic error: near "a": syntax error (1)
+2024/10/10 10:57:49 workDir does not match the shell pattern
+2024/10/10 10:57:50 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 10:58:25 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 10:58:25 succesfully created local database
+2024/10/10 10:58:26 query error
+2024/10/10 10:58:26 SQL logic error: near "a": syntax error (1)
+2024/10/10 10:58:30 query error
+2024/10/10 10:58:30 SQL logic error: near "selct": syntax error (1)
+2024/10/10 10:58:34 query error
+2024/10/10 10:58:34 SQL logic error: near "aaaa": syntax error (1)
+2024/10/10 10:58:37 query error
+2024/10/10 10:58:37 SQL logic error: no such table: aaaa (1)
+2024/10/10 11:07:17 workDir does not match the shell pattern
+2024/10/10 11:07:17 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:07:26 workDir does not match the shell pattern
+2024/10/10 11:07:26 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:12:13 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:12:13 succesfully created local database
+2024/10/10 11:13:43 query error
+2024/10/10 11:13:43 SQL logic error: near "where": syntax error (1)
+2024/10/10 11:14:59 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:14:59 succesfully created local database
+2024/10/10 11:15:14 query error
+2024/10/10 11:15:14 SQL logic error: near "where": syntax error (1)
+2024/10/10 11:18:25 query error
+2024/10/10 11:18:25 SQL logic error: near "where": syntax error (1)
+2024/10/10 11:19:48 workDir does not match the shell pattern
+2024/10/10 11:19:48 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:20:38 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:20:38 succesfully created local database
+2024/10/10 11:20:45 select * from ncmtab where codncm = 6810 and where codncm = 1
+2024/10/10 11:20:45 query error
+2024/10/10 11:20:45 SQL logic error: near "where": syntax error (1)
+2024/10/10 11:21:00 select * from ncmtab where codncm = 6810 \ and where codncm = 1
+2024/10/10 11:21:00 query error
+2024/10/10 11:21:00 SQL logic error: unrecognized token: "\" (1)
+2024/10/10 11:21:06 select * from ncmtab where codncm = 6810 / and where codncm = 1
+2024/10/10 11:21:06 query error
+2024/10/10 11:21:06 SQL logic error: near "and": syntax error (1)
+2024/10/10 11:21:11 select * from ncmtab where codncm = 6810 / and codncm = 1
+2024/10/10 11:21:11 query error
+2024/10/10 11:21:11 SQL logic error: near "and": syntax error (1)
+2024/10/10 11:21:16 select * from ncmtab where codncm = 6810 \ and codncm = 1
+2024/10/10 11:21:16 query error
+2024/10/10 11:21:16 SQL logic error: unrecognized token: "\" (1)
+2024/10/10 11:22:51 workDir does not match the shell pattern
+2024/10/10 11:22:51 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:23:03 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:23:03 succesfully created local database
+2024/10/10 11:26:11 workDir does not match the shell pattern
+2024/10/10 11:26:11 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:26:19 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:26:19 succesfully created local database
+2024/10/10 11:27:03 workDir does not match the shell pattern
+2024/10/10 11:27:03 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:27:12 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:27:12 succesfully created local database
+2024/10/10 11:27:18 select * from ncmtab where codcm = 1
+2024/10/10 11:27:18 query error
+2024/10/10 11:27:18 SQL logic error: no such column: codcm (1)
+2024/10/10 11:31:56 workDir does not match the shell pattern
+2024/10/10 11:31:56 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:36:49 workDir does not match the shell pattern
+2024/10/10 11:36:49 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:37:01 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:37:01 succesfully created local database
+2024/10/10 11:38:19 workDir does not match the shell pattern
+2024/10/10 11:38:19 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:38:27 workDir does not match the shell pattern
+2024/10/10 11:38:27 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:38:29 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:38:29 succesfully created local database
+2024/10/10 11:38:59 workDir does not match the shell pattern
+2024/10/10 11:38:59 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:39:05 workDir does not match the shell pattern
+2024/10/10 11:39:05 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:39:13 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:39:13 succesfully created local database
+2024/10/10 11:39:58 workDir does not match the shell pattern
+2024/10/10 11:39:58 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:40:08 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:40:08 succesfully created local database
+2024/10/10 11:41:31 workDir does not match the shell pattern
+2024/10/10 11:41:31 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:43:26 workDir does not match the shell pattern
+2024/10/10 11:43:26 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:43:32 workDir does not match the shell pattern
+2024/10/10 11:43:32 Server working directory: C:\Users\suporte\Dev\sqlview1\backend
+2024/10/10 11:46:11 trying to connect to database: C:\Users\suporte\Dev\sqlview1\backend\debug.db
+2024/10/10 11:46:11 succesfully created local database
+2024/10/10 11:47:58 a
+2024/10/10 11:47:58 query error
+2024/10/10 11:47:58 SQL logic error: near "a": syntax error (1)
