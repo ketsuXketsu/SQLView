@@ -23,7 +23,8 @@ type LocalDatabase struct {
 }
 
 type ResponseObject struct {
-	Fields []string `json:"fields"`
+	Headers []string `json:"headers"`
+	Fields  []string `json:"fields"`
 }
 
 var localServer = SVServer{}
@@ -93,51 +94,65 @@ func (db *LocalDatabase) SVQuery(query string) string {
 		}
 		return string(retErr)
 	}
-
 	cols, err := rows.Columns()
 	if err != nil {
 		logger.Log("error scanning number of columns in row", err)
+		return err.Error()
 	}
 
 	values := make([]interface{}, len(cols))
 	valuePointers := make([]interface{}, len(cols))
-	valuesArray := []string{}
+	valuesArray := make([][]interface{}, 0)
 
+	// Reading value from .db file
 	for rows.Next() {
 		for i := range cols {
-			valuePointers[i] = &values[i] // Creates two identical arrays,
-			// with one of them storing pointers and the other storing values
-
+			valuePointers[i] = &values[i]
 		}
-		defer rows.Close()
+
 		err = rows.Scan(valuePointers...)
 		if err != nil {
-			logger.Log("", err)
+			logger.Log("error scanning rows", err)
+			return err.Error()
+		}
+		// Something about empty interfaces
+		rowData := make([]interface{}, len(cols))
+		for i, val := range values {
+			b, ok := val.([]byte)
+			if ok {
+				rowData[i] = string(b)
+			} else {
+				rowData[i] = val
+			}
+
+			batchLogger.Log(fmt.Sprintf("scanned value: %v", rowData[i]), nil)
 		}
 
-		for i := range cols { // Magic (empty interfaces)
-			val := values[i] //https://stackoverflow.com/questions/17845619/how-to-call-the-scan-variadic-function-using-reflection
-			b, ok := val.([]byte)
-			var v interface{}
-			if ok { // no idea how this works
-				v = string(b)
-			} else {
-				v = val
-			}
-			batchLogger.Log("scanned row "+v.(string), nil)
-		}
+		valuesArray = append(valuesArray, rowData)
 	}
 
-	if err != nil {
+	if err = rows.Err(); err != nil {
+		logger.Log("error after scanning rows", err)
 		return err.Error()
 	}
 
-	separatedValuesArray := SeparateObjects(valuesArray, len(cols))
-	v, err := json.Marshal(separatedValuesArray) // Convert to JSON so it can be interpreted directly by the frontend
-	if err != nil {
-		logger.Log("", err)
-		return ""
+	// Convert the 2D slice to a slice of ResponseObject
+	var responseArray []ResponseObject
+	for _, row := range valuesArray {
+		obj := ResponseObject{Fields: make([]string, len(row))}
+		obj.Headers = cols
+		for i, val := range row {
+			obj.Fields[i] = fmt.Sprintf("%v", val)
+		}
+		responseArray = append(responseArray, obj)
 	}
+
+	v, err := json.Marshal(responseArray)
+	if err != nil {
+		logger.Log("error marshaling JSON", err)
+		return err.Error()
+	}
+
 	return string(v)
 }
 

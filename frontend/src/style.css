@@ -2,6 +2,7 @@
 :root {
     --bg-main: #262626;
     --bg-main-container: #383838;
+    --bg-main-dark: #1c1c1c;
     --border: #5e5e5e;
     --button: #272727;
     --object: #313035;
@@ -38,29 +39,43 @@ body * {
 .sidebarL {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-right: 1px solid var(--border);
     width: 20%;
-    gap: 2px;
 }
 
-.sidebarL button {
-    border-bottom: 2px solid var(--border);
+.sidebarLActions {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--button);
+}
+
+.sidebarLActions button {
+    background-color: inherit;
     color: inherit;
     border: none;
-    background-color: var(--button);
-    padding: 10px;
+    border-bottom: 1px solid var(--border);
+    padding: 5px;
 }
-.sidebarL button:hover {
-    background-color: rgb(30, 28, 55);
-    margin-left: 10px;
-    transition-duration: 0.5s;
-    cursor: pointer;
+.sidebarLActions button:hover {
+    background-color: var(--border);
+}
+
+.fileExplorer {
+    display: flex;
+    flex-shrink: 3;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    color: orange;
+}
+.fileExplorer * {
+    min-width: 100%;
+    font-size: 10px;
 }
 
 .queryPanel {
     width: 30%;
     height: 100%;
-    border-right: 1px solid var(--border);
 }
 
 .queryArea {
@@ -73,16 +88,70 @@ body * {
     font-family: monospace;
 }
 
+.toolbox {
+    position: sticky;
+    top: 0;
+    background-color: var(--button);
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    gap: 2px;
+}
+
+.toolbox button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    border: none;
+    border-right: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.toolbox p {
+    margin: 0px;
+}
+.toolbox div {
+    border-right: 1px solid var(--border);
+}
+
+.toolbox input {
+    background-color: var(--border);    
+    border: none;
+    color: white;
+    width: 80%;
+}
+
+.toolbox button:hover {
+    background-color: var(--border);
+    cursor: pointer;
+}
+
 .infoViewPanel {
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-main-dark);
     width: 60%;
     overflow-y: scroll;
 }
 
-.sqlObject {
+.sqlHeader {
+    position: sticky;
+    top: 6vh;
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    font-size: 16px;
+    background-color: var(--object);
+    border-bottom: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.sqlHeader * {
+    margin: 2px;
+}
+
+.sqlObject {
+    display: flex;
+    flex-direction: column;
     background-color: var(--object);
     border-left: 4px solid white;
     min-width: 100%;
@@ -90,14 +159,14 @@ body * {
     min-height: 15vh;
     max-height: 30vh;
     margin-bottom: 5px;
-    font-size: 10px;
+    font-size: inherit;
 }
 
 .sqlObject:hover {
     background-color: var(--border);
     border: 1px solid white;
     cursor: pointer;
-    font-size: 12px;
+    font-size: calc(inherit + 10px);
 }
 
 #app {

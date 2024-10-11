@@ -24,6 +24,10 @@ func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 }
 
+func (a *App) DatabaseButtonClicked(path string) {
+	SVMiddleware.GetDatabase(path)
+}
+
 func (a *App) FileDialog() (string, error) {
 	opts := runtime.OpenDialogOptions{
 		DefaultDirectory: ".",
