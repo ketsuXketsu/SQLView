@@ -51,13 +51,13 @@ function DebugItem() {
             var values = JSON.parse(localStorage.getItem('debugItems') || `"error":"empty"`)
             var valueList = values.map((val) => {
                 return (
-                    <p>{val}</p>
+                    <div className='sqlObject'>
+                        <p>{val.fields}</p>
+                    </div>
                 )
             })
             return (
-                <div className='sqlObject'>
-                    <p>{valueList}</p>
-                </div> 
+                <div>{valueList}</div>
             ); 
         }
         catch {

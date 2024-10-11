@@ -22,6 +22,10 @@ type LocalDatabase struct {
 	DB *sql.DB
 }
 
+type ResponseObject struct {
+	Fields []string `json:"fields"`
+}
+
 var localServer = SVServer{}
 var logger = utils.Logger{
 	ShowTime:  true,
@@ -129,10 +133,26 @@ func (db *LocalDatabase) SVQuery(query string) string {
 		return err.Error()
 	}
 
-	v, err := json.Marshal(valuesArray) // Convert to JSON so it can be interpreted directly by the frontend
+	separatedValuesArray := SeparateObjects(valuesArray, len(cols))
+	v, err := json.Marshal(separatedValuesArray) // Convert to JSON so it can be interpreted directly by the frontend
 	if err != nil {
 		logger.Log("", err)
 		return ""
 	}
 	return string(v)
+}
+
+// Since the values obtained from the query/reflection come in a single array containing everything, we have to split them
+// this function takes the amount of columns and strings inside of the valuesArray, and separates them.
+func SeparateObjects(arr_to_split []string, cols int) []ResponseObject {
+	valArr := []ResponseObject{}
+	obj := ResponseObject{}
+	for i := range arr_to_split {
+		obj.Fields = append(obj.Fields, arr_to_split[i])
+		if (i+1)%cols == 0 {
+			valArr = append(valArr, obj)
+			obj.Fields = []string{}
+		}
+	}
+	return valArr
 }
