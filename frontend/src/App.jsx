@@ -32,7 +32,7 @@ function App() {
                     <textarea className='queryArea' spellCheck="false" onChange={(e) => setCurrQuery(e.target.value)}></textarea>
                 </div>
                 <div className='infoViewPanel'>
-                    <DebugItem /> 
+                    <SQLItems /> 
                 </div>
             </div>
         </div>
@@ -45,14 +45,19 @@ async function QueryBackend(_query) {
     });
 };
 
-function DebugItem() {
+function SQLItems() {
     if (localStorage.getItem('debugItems') != null && localStorage.getItem('debugItems') != "") {
         try {
             var values = JSON.parse(localStorage.getItem('debugItems') || `"error":"empty"`)
             var valueList = values.map((val) => {
+                var sepVals = val.fields.map((uVal) => {
+                   return (
+                        <p>{uVal}</p>
+                   )
+                })
                 return (
                     <div className='sqlObject'>
-                        <p>{val.fields}</p>
+                        <ul>{sepVals}</ul>
                     </div>
                 )
             })

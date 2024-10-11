@@ -124,7 +124,6 @@ func (db *LocalDatabase) SVQuery(query string) string {
 			} else {
 				v = val
 			}
-			valuesArray = append(valuesArray, v.(string)) // valuesArray will later be converted to JSON and returned
 			batchLogger.Log("scanned row "+v.(string), nil)
 		}
 	}
