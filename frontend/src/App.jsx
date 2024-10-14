@@ -29,38 +29,28 @@ function App() {
 
     return (
         <div id="App">
+            
             <div className='navbar'>
                 <p>SView</p>
             </div>
+
             <div className='mainContainer'>
                 <div className='sidebarL'>
-                    <div className='sidebarLActions'>
-                        <button onClick={() => query({currQuery})}>Execute Query</button>
-                        <button onClick={changeDb}>Open DB File</button>
-                    </div>
-                    <div>
-                        <button onClick={() => clearRecentFiles()}>Clear</button>
-                        <div className='fileExplorer'>
-                            <RecentFiles />
-                        </div>
-                    </div>
+                    <button onClick={() => query({currQuery})}>Execute Query</button>
+                    <button onClick={changeDb}>Open DB File</button>
                 </div>
-                <div className='queryPanel'> 
-                    <textarea className='queryArea' spellCheck="false" onChange={(e) => setCurrQuery(e.target.value)}></textarea>
-                </div>
-                <div className='infoViewPanel' style={{fontSize : `${infoViewFontSize}px`}}>
-                    <div className='toolbox'>
-                        <button className='clearBtn' onClick={() => clearItems()}>Clear Items</button>
-                        <div>
-                            <p>Filter results: </p>
-                            <input></input>
-                        </div>
+                <div className='viewsContainer'>
+                    <div className='queryPanel'>
+                        <textarea className='queryArea' spellCheck="false" onChange={(e) => setCurrQuery(e.target.value)}></textarea>
                     </div>
-                    <SQLHeaders />
-                    <SQLItems /> 
+                    <div className='itemViewPanel'>
+                        <SQLHeaders />
+                        <SQLItems />
+                    </div>
                 </div>
             </div>
-        </div>
+
+        </div> 
     );
 };
 
@@ -162,7 +152,7 @@ function SQLItems() {
                 )
             })
             return (
-                <div>{valueList}</div>
+                <div className='sqlObjectContainer'>{valueList}</div>
             ); 
         }
         catch 
