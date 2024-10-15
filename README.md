@@ -2,7 +2,7 @@
 
 ## About
 
-SQLView is a very simple SQLite Interface, it has almost nothing more than a simple CLI would have, it was made simply for visualization. It is very lightweight (13mb, single binary)
+SQLiteView is a very simple SQLite Interface, it has almost nothing more than a simple CLI would have, it was made simply for visualization. It is very lightweight (13mb, single binary)
 It is written in Go using the Wails Framework, with React-JS as the frontend. 
 This is purely a student project, don't expect to use it for anything serious, as breaking the program is very buggy right now.
 
