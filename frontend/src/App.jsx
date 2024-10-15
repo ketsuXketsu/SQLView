@@ -1,4 +1,5 @@
 import {useEffect, useReducer, useState} from 'react';
+import {RotatingLines} from 'react-loader-spinner'
 import './App.css';
 import {Query} from '../wailsjs/go/main/App'
 import {FileDialog} from '../wailsjs/go/main/App'
@@ -7,7 +8,9 @@ import {DatabaseButtonClicked} from '../wailsjs/go/main/App';
 function App() {
     const query = async (_query) => {
         localStorage.removeItem('sqlItems')
+        setIsLoading(true)
         await QueryBackend(_query.currQuery);
+        setIsLoading(false)
         setState(state + 1);
     };
     const changeDb = async () => {
@@ -23,9 +26,16 @@ function App() {
         setState(state + 1);
     }
 
+    const clearCache = async () => {
+        localStorage.clear()
+        setState(0)
+    }
+
+
     const [state, setState] = useState(0);
     const [currQuery, setCurrQuery] = useState("");
     const [infoViewFontSize, setInfoViewFontSize] = useState('20') // Not working 
+    const [isLoading, setIsLoading] = useState(false)
 
     return (
         <div id="App">
@@ -36,23 +46,52 @@ function App() {
 
             <div className='mainContainer'>
                 <div className='sidebarL'>
-                    <button onClick={() => query({currQuery})}>Execute Query</button>
-                    <button onClick={changeDb}>Open DB File</button>
+                    <span>
+                        <button onClick={() => query({currQuery})}>Execute Query</button>
+                        <button onClick={changeDb}>Open DB File</button>
+                        <button onClick={clearCache}> Clear Cache </button>
+                    </span>
+                    <span>
+                    <button onClick={() => clearRecentFiles()}>Clear</button>
+                    < RecentFiles />
+                    </span>
                 </div>
                 <div className='viewsContainer'>
+                    <div className='toolPanel'>
+                        <button onClick={() => clearItems()}>Clear Items</button>
+                    </div>
                     <div className='queryPanel'>
                         <textarea className='queryArea' spellCheck="false" onChange={(e) => setCurrQuery(e.target.value)}></textarea>
                     </div>
+                    {!isLoading &&
                     <div className='itemViewPanel'>
                         <SQLHeaders />
                         <SQLItems />
                     </div>
+                    }
+                    {isLoading &&
+                    <div className='loader'>
+                        <Loader />
+                    </div>
+                    }
                 </div>
             </div>
 
         </div> 
     );
 };
+
+function Loader() {
+  return (
+    <RotatingLines
+      strokeColor="grey"
+      strokeWidth="5"
+      animationDuration="0.75"
+      width="100"
+      visible={true}
+    />
+    )
+}
 
 async function DbButton(button) {
     DatabaseButtonClicked(button)
@@ -76,7 +115,7 @@ function RecentFiles() {
         const files = JSON.parse(localStorage.getItem('recentFiles') || '[]')
         const fileList = files.map((file) => {
             return (
-                <button value={file.name} onClick={(e) => changeDb(e.target.value)}>{file.name}</button>
+                <button value={file.name} onClick={(e) => DbButton(e.target.value)}>{file.name}</button>
             )
         })
         return (
