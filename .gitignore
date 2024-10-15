@@ -4,3 +4,4 @@ frontend/dist
 logs
 backend/tests
 todo
+logs/log
